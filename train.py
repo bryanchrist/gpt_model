@@ -5,8 +5,8 @@ import pandas as pd
 
 batch_size = 64 # how many independent sequences will we process in parallel?
 block_size = 280 # amended to be max length of a tweet
-max_iters = 500000
-eval_interval = 500
+max_iters = 50000
+eval_interval = 400
 learning_rate = 3e-4
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 eval_iters = 200
@@ -205,9 +205,14 @@ for iter in range(max_iters):
     model.train()
     # every once in a while evaluate the loss on train and val sets
     if iter % eval_interval == 0 or iter == max_iters - 1:
+        model.eval()
         losses = estimate_loss()
         print(f"step {iter}: train loss {losses['train']:.4f}, val loss {losses['val']:.4f}")
-
+        if losses['val']<min_valid_loss:
+            print(f"Validation Loss Decreased({min_valid_loss}--->{losses['val']}) \t Saving The Model")
+            torch.save(model.state_dict(), 'gpt_model.pth')
+            min_valid_loss = losses['val']
+        
     # sample a batch of data
     xb, yb = get_batch('train')
 
@@ -216,10 +221,3 @@ for iter in range(max_iters):
     optimizer.zero_grad(set_to_none=True)
     loss.backward()
     optimizer.step()
-    
-    model.eval()
-    losses = estimate_loss()
-    if losses['val']<min_valid_loss:
-        print(f"Validation Loss Decreased({min_valid_loss}--->{losses['val']}) \t Saving The Model")
-        torch.save(model.state_dict(), 'gpt_model.pth')
-        min_valid_loss = losses['val']

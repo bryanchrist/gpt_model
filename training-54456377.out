@@ -1,0 +1,173 @@
+Requirement already satisfied: torchvision in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (0.16.0)
+Requirement already satisfied: numpy in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from torchvision) (1.25.2)
+Requirement already satisfied: requests in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from torchvision) (2.31.0)
+Requirement already satisfied: torch==2.1.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from torchvision) (2.1.0)
+Requirement already satisfied: pillow!=8.3.*,>=5.3.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from torchvision) (10.0.1)
+Requirement already satisfied: filelock in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from torch==2.1.0->torchvision) (3.9.0)
+Requirement already satisfied: typing-extensions in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from torch==2.1.0->torchvision) (4.4.0)
+Requirement already satisfied: sympy in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from torch==2.1.0->torchvision) (1.11.1)
+Requirement already satisfied: networkx in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from torch==2.1.0->torchvision) (3.0rc1)
+Requirement already satisfied: jinja2 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from torch==2.1.0->torchvision) (3.1.2)
+Requirement already satisfied: fsspec in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from torch==2.1.0->torchvision) (2023.4.0)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.1.105 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from torch==2.1.0->torchvision) (12.1.105)
+Requirement already satisfied: nvidia-cuda-runtime-cu12==12.1.105 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from torch==2.1.0->torchvision) (12.1.105)
+Requirement already satisfied: nvidia-cuda-cupti-cu12==12.1.105 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from torch==2.1.0->torchvision) (12.1.105)
+Requirement already satisfied: nvidia-cudnn-cu12==8.9.2.26 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from torch==2.1.0->torchvision) (8.9.2.26)
+Requirement already satisfied: nvidia-cublas-cu12==12.1.3.1 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from torch==2.1.0->torchvision) (12.1.3.1)
+Requirement already satisfied: nvidia-cufft-cu12==11.0.2.54 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from torch==2.1.0->torchvision) (11.0.2.54)
+Requirement already satisfied: nvidia-curand-cu12==10.3.2.106 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from torch==2.1.0->torchvision) (10.3.2.106)
+Requirement already satisfied: nvidia-cusolver-cu12==11.4.5.107 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from torch==2.1.0->torchvision) (11.4.5.107)
+Requirement already satisfied: nvidia-cusparse-cu12==12.1.0.106 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from torch==2.1.0->torchvision) (12.1.0.106)
+Requirement already satisfied: nvidia-nccl-cu12==2.18.1 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from torch==2.1.0->torchvision) (2.18.1)
+Requirement already satisfied: nvidia-nvtx-cu12==12.1.105 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from torch==2.1.0->torchvision) (12.1.105)
+Requirement already satisfied: triton==2.1.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from torch==2.1.0->torchvision) (2.1.0)
+Requirement already satisfied: nvidia-nvjitlink-cu12 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from nvidia-cusolver-cu12==11.4.5.107->torch==2.1.0->torchvision) (12.2.140)
+Requirement already satisfied: charset-normalizer<4,>=2 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from requests->torchvision) (3.1.0)
+Requirement already satisfied: idna<4,>=2.5 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from requests->torchvision) (3.4)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from requests->torchvision) (2.0.3)
+Requirement already satisfied: certifi>=2017.4.17 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from requests->torchvision) (2023.5.7)
+Requirement already satisfied: MarkupSafe>=2.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from jinja2->torch==2.1.0->torchvision) (2.1.2)
+Requirement already satisfied: mpmath>=0.19 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from sympy->torch==2.1.0->torchvision) (1.2.1)
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+# All requested packages already installed.
+
+11.588677 M parameters
+step 0: train loss 1.0411, val loss 1.2880
+Validation Loss Decreased(1.2892735004425049--->1.2880303859710693) 	 Saving The Model
+step 400: train loss 1.0434, val loss 1.2994
+step 800: train loss 1.0354, val loss 1.2924
+step 1200: train loss 1.0433, val loss 1.2923
+step 1600: train loss 1.0399, val loss 1.2891
+step 2000: train loss 1.0437, val loss 1.2973
+step 2400: train loss 1.0448, val loss 1.2865
+Validation Loss Decreased(1.2880303859710693--->1.2865427732467651) 	 Saving The Model
+step 2800: train loss 1.0407, val loss 1.2973
+step 3200: train loss 1.0385, val loss 1.2903
+step 3600: train loss 1.0402, val loss 1.2940
+step 4000: train loss 1.0348, val loss 1.3028
+step 4400: train loss 1.0327, val loss 1.2912
+step 4800: train loss 1.0376, val loss 1.2922
+step 5200: train loss 1.0378, val loss 1.2936
+step 5600: train loss 1.0311, val loss 1.2816
+Validation Loss Decreased(1.2865427732467651--->1.281584620475769) 	 Saving The Model
+step 6000: train loss 1.0297, val loss 1.2900
+step 6400: train loss 1.0275, val loss 1.2870
+step 6800: train loss 1.0303, val loss 1.2920
+step 7200: train loss 1.0307, val loss 1.2932
+step 7600: train loss 1.0258, val loss 1.2887
+step 8000: train loss 1.0331, val loss 1.2827
+step 8400: train loss 1.0324, val loss 1.2949
+step 8800: train loss 1.0245, val loss 1.2877
+step 9200: train loss 1.0282, val loss 1.2909
+step 9600: train loss 1.0204, val loss 1.2871
+step 10000: train loss 1.0161, val loss 1.2793
+Validation Loss Decreased(1.281584620475769--->1.2793223857879639) 	 Saving The Model
+step 10400: train loss 1.0261, val loss 1.2874
+step 10800: train loss 1.0242, val loss 1.2826
+step 11200: train loss 1.0218, val loss 1.2873
+step 11600: train loss 1.0223, val loss 1.2908
+step 12000: train loss 1.0222, val loss 1.2876
+step 12400: train loss 1.0215, val loss 1.2910
+step 12800: train loss 1.0221, val loss 1.2902
+step 13200: train loss 1.0187, val loss 1.2845
+step 13600: train loss 1.0214, val loss 1.2922
+step 14000: train loss 1.0163, val loss 1.2845
+step 14400: train loss 1.0263, val loss 1.2859
+step 14800: train loss 1.0156, val loss 1.2895
+step 15200: train loss 1.0181, val loss 1.2783
+Validation Loss Decreased(1.2793223857879639--->1.2782626152038574) 	 Saving The Model
+step 15600: train loss 1.0153, val loss 1.2837
+step 16000: train loss 1.0171, val loss 1.2824
+step 16400: train loss 1.0146, val loss 1.2943
+step 16800: train loss 1.0140, val loss 1.2821
+step 17200: train loss 1.0191, val loss 1.2803
+step 17600: train loss 1.0161, val loss 1.2863
+step 18000: train loss 1.0095, val loss 1.2815
+step 18400: train loss 1.0116, val loss 1.2814
+step 18800: train loss 1.0180, val loss 1.2848
+step 19200: train loss 1.0124, val loss 1.2921
+step 19600: train loss 1.0098, val loss 1.2851
+step 20000: train loss 1.0122, val loss 1.2851
+step 20400: train loss 1.0095, val loss 1.2856
+step 20800: train loss 1.0152, val loss 1.2790
+step 21200: train loss 1.0118, val loss 1.2838
+step 21600: train loss 1.0063, val loss 1.2935
+step 22000: train loss 1.0102, val loss 1.2772
+Validation Loss Decreased(1.2782626152038574--->1.2772314548492432) 	 Saving The Model
+step 22400: train loss 1.0056, val loss 1.2842
+step 22800: train loss 1.0059, val loss 1.2845
+step 23200: train loss 1.0006, val loss 1.2829
+step 23600: train loss 1.0090, val loss 1.2850
+step 24000: train loss 1.0042, val loss 1.2797
+step 24400: train loss 1.0026, val loss 1.2790
+step 24800: train loss 1.0028, val loss 1.2839
+step 25200: train loss 1.0017, val loss 1.2731
+Validation Loss Decreased(1.2772314548492432--->1.2731355428695679) 	 Saving The Model
+step 25600: train loss 0.9994, val loss 1.2863
+step 26000: train loss 1.0037, val loss 1.2781
+step 26400: train loss 1.0080, val loss 1.2780
+step 26800: train loss 1.0038, val loss 1.2929
+step 27200: train loss 0.9984, val loss 1.2855
+step 27600: train loss 1.0036, val loss 1.2759
+step 28000: train loss 1.0020, val loss 1.2756
+step 28400: train loss 1.0017, val loss 1.2838
+step 28800: train loss 0.9980, val loss 1.2839
+step 29200: train loss 0.9952, val loss 1.2714
+Validation Loss Decreased(1.2731355428695679--->1.2714028358459473) 	 Saving The Model
+step 29600: train loss 1.0005, val loss 1.2858
+step 30000: train loss 0.9988, val loss 1.2821
+step 30400: train loss 0.9908, val loss 1.2754
+step 30800: train loss 0.9934, val loss 1.2826
+step 31200: train loss 0.9973, val loss 1.2872
+step 31600: train loss 0.9909, val loss 1.2886
+step 32000: train loss 0.9941, val loss 1.2753
+step 32400: train loss 0.9892, val loss 1.2803
+step 32800: train loss 0.9865, val loss 1.2813
+step 33200: train loss 0.9918, val loss 1.2817
+step 33600: train loss 0.9971, val loss 1.2831
+step 34000: train loss 0.9885, val loss 1.2769
+step 34400: train loss 0.9942, val loss 1.2805
+step 34800: train loss 0.9912, val loss 1.2828
+step 35200: train loss 0.9883, val loss 1.2764
+step 35600: train loss 0.9915, val loss 1.2855
+step 36000: train loss 0.9934, val loss 1.2761
+step 36400: train loss 0.9921, val loss 1.2857
+step 36800: train loss 0.9890, val loss 1.2792
+step 37200: train loss 0.9910, val loss 1.2801
+step 37600: train loss 0.9908, val loss 1.2810
+step 38000: train loss 0.9864, val loss 1.2727
+step 38400: train loss 0.9930, val loss 1.2889
+step 38800: train loss 0.9866, val loss 1.2825
+step 39200: train loss 0.9924, val loss 1.2755
+step 39600: train loss 0.9879, val loss 1.2873
+step 40000: train loss 0.9884, val loss 1.2830
+step 40400: train loss 0.9843, val loss 1.2782
+step 40800: train loss 0.9903, val loss 1.2807
+step 41200: train loss 0.9846, val loss 1.2836
+step 41600: train loss 0.9932, val loss 1.2681
+Validation Loss Decreased(1.2714028358459473--->1.268122673034668) 	 Saving The Model
+step 42000: train loss 0.9856, val loss 1.2711
+step 42400: train loss 0.9908, val loss 1.2867
+step 42800: train loss 0.9826, val loss 1.2725
+step 43200: train loss 0.9859, val loss 1.2792
+step 43600: train loss 0.9822, val loss 1.2774
+step 44000: train loss 0.9842, val loss 1.2742
+step 44400: train loss 0.9838, val loss 1.2752
+step 44800: train loss 0.9811, val loss 1.2795
+step 45200: train loss 0.9800, val loss 1.2669
+Validation Loss Decreased(1.268122673034668--->1.2669119834899902) 	 Saving The Model
+step 45600: train loss 0.9801, val loss 1.2755
+step 46000: train loss 0.9881, val loss 1.2832
+step 46400: train loss 0.9798, val loss 1.2634
+Validation Loss Decreased(1.2669119834899902--->1.2633752822875977) 	 Saving The Model
+step 46800: train loss 0.9794, val loss 1.2788
+step 47200: train loss 0.9817, val loss 1.2818
+step 47600: train loss 0.9817, val loss 1.2673
+step 48000: train loss 0.9818, val loss 1.2815
+step 48400: train loss 0.9825, val loss 1.2727
+step 48800: train loss 0.9781, val loss 1.2814
+step 49200: train loss 0.9794, val loss 1.2867
+step 49600: train loss 0.9824, val loss 1.2748
+step 49999: train loss 0.9716, val loss 1.2762
